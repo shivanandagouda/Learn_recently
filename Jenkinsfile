@@ -7,7 +7,7 @@ pipeline {
                 steps {
                  script 
                 {
-            bat 'docker build -t . apache'
+            bat 'docker build -t apache .'
             bat 'docker run -t apache'
                  }
             }
