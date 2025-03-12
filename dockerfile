@@ -1,3 +1,4 @@
 From centos:latest
-RUN yum install -y httpd
+RUN yum-y update && yum install -y httpd
 EXPOSE 8083
+CMD ["httpd", "-D", "FOREGROUND"]
