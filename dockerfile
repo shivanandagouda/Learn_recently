@@ -1,4 +1,4 @@
-From centos:latest
-RUN yum -y update && yum install -y apache2
+From centos/httpd-24-centos7
+RUN yum -y update && yum install -y httpd
 EXPOSE 8083
-CMD ["apache2", "-D", "FOREGROUND"]
+CMD ["httpd", "-D", "FOREGROUND"]
