@@ -4,11 +4,13 @@ pipeline {
             {
            stage(first) 
               {
+                steps {
                  script 
                 {
             bat 'docker version'
                  }
             }
       }
+}
 }
 
