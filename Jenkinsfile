@@ -5,7 +5,7 @@ pipeline {
                    {
                        steps { 
                            script {
-                bat 'docker build -t .'
+                bat 'docker build -t . ansible'
                            }
                        }
         }
