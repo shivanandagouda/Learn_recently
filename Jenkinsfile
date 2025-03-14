@@ -1,17 +1,8 @@
 pipeline {
-  agent any 
-     stages
-            {
-           stage(first) 
-              {
-                steps {
-                 script 
-                {
-            bat 'docker build -t apache .'
-            bat 'docker run -t apache'
-                 }
-            }
-      }
+    agent any
+        stages {
+            stage (ansible play book run} { 
+                bat 'docker build -t .'
+                
+        }
 }
-}
-
