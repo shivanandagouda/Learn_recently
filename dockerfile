@@ -1,3 +1,3 @@
-FROM httpd:2.4
-COPY ./index.html /usr/local/apache2/htdocs
-EXPOSE 3122
+FROM centos:centos7.9.2009
+RUN yum install ansible -y
+
