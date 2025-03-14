@@ -1,7 +1,7 @@
 pipeline {
     agent any
         stages {
-            stage (ansible play book run) 
+            stage (ansible) 
                    {
                        steps { 
                            script {
